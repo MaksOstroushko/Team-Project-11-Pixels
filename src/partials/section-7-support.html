@@ -18,8 +18,8 @@
             maxlength="64"
             required
           />
-          <span class="error-message"
-            >Ім'я повинно містити від 5 до 64 символів.</span>
+          <p class="text-invalid">
+            Ім'я повинно містити від 5 до 64 символів.</p>
         </div>
         <div class="support-input-div">
           <label class="support-input-label" for="email"
@@ -33,7 +33,7 @@
             pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
             required
           />
-          <span class="error-message">Введіть коректну email адресу.</span>
+          <p class="text-invalid">Введіть коректну email адресу.</p>
         </div>
         <div class="support-form-massage">
           <label class="support-input-label" for="user-massage"
@@ -43,9 +43,7 @@
             id="user-massage"
             name="user-massage"
             maxlength="500"
-            placeholder="Введіть своє повідомлення...">
-          </textarea>
-          <span class="error-message">Максимум 500 символів.</span>
+            placeholder="Введіть своє повідомлення..."></textarea>
         </div>
         <button class="support-submit-btn" type="submit">Надіслати</button>
       </form>
@@ -53,31 +51,3 @@
     <div class="support-img support-div"></div>
   </div>
 </section>
-
-<script>
-  document
-    .querySelectorAll('.support-input, .massage-textarea')
-    .forEach(field => {
-      field.addEventListener('input', () => {
-        const errorMessage = field.nextElementSibling;
-
-        let isValid = field.checkValidity();
-
-        const pattern = field.getAttribute('pattern');
-        if (pattern && field.value !== '') {
-          const regex = new RegExp(pattern);
-          if (!regex.test(field.value)) {
-            isValid = false;
-          }
-        }
-
-        if (isValid) {
-          field.classList.remove('error');
-          errorMessage.classList.remove('active');
-        } else {
-          field.classList.add('error');
-          errorMessage.classList.add('active');
-        }
-      });
-    });
-</script>

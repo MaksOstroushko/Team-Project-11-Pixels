@@ -68,22 +68,6 @@
     outline: none;
 }
 
-.error-message {
-    font-size: 12px;
-    color: #D64040;
-    margin-top: 4px;
-    display: none;
-}
-
-.error-message.active {
-    display: block;
-}
-
-.support-input.error {
-    border-color: #D64040;
-    color: #D64040;
-}
-
 .massage-textarea::placeholder,
 .support-input::placeholder {
     color:rgba(3, 10, 6, 0.6);
@@ -92,6 +76,24 @@
 .massage-textarea:focus::placeholder,
 .support-input:focus::placeholder {
   color: transparent;
+}
+
+.text-invalid {
+  font-size: 12px;
+  margin-top: 4px;
+  display: none;
+  padding-left: 2px;
+  color: #d64040;
+}
+
+.support-input:not(:placeholder-shown):invalid,
+.massage-textarea:not(:placeholder-shown):invalid {
+  border-color: #d64040;
+  color: #d64040;
+}
+
+.support-input:not(:placeholder-shown):invalid ~ .text-invalid {
+  display: block;
 }
 
 .support-submit-btn {
