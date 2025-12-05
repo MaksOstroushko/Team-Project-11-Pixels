@@ -1,0 +1,118 @@
+/*mobile first*/
+.about-section{
+  background-color:#fff;
+  color: #fff;
+  background-image: linear-gradient( 
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.4)),
+    url("/img/about/about-m@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+  max-width: 320px;
+  padding: 64px 16px;
+}
+
+.about-container{
+  background-color: #fff, rgba(0, 0, 0, 0.2);
+  max-width: 288px;
+  margin: 0 auto;
+}
+
+.about-title{
+  max-width: 95px;  
+  margin: auto;
+  margin-bottom: 12px;
+
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px; 
+  line-height: 1.5;
+  text-align: center;
+  color: #fff;  
+}
+
+.about-subtitle{
+  max-width: 288px; 
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #fff;  
+}
+
+.about-text{
+  max-width: 288px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  color: #fff;
+}
+
+@media screen and (min-resolution: 192dpi) {
+  .about-section{ 
+   background-image: linear-gradient( 
+    rgba(0, 0, 0, 0.4)),
+    url("/img/about/about-m@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 768px){
+  .about-section{
+  background-image: linear-gradient( 
+    rgba(0, 0, 0, 0.4)),
+    url("/img/about/about-t@1x.jpg");
+  max-width: 768px;
+  padding: 80px 32px;
+  }
+  .about-container{
+    width: 100%;
+    height: 100%;
+  }
+  .about-title{
+  margin-bottom: 16px;
+  }
+  .about-subtitle{
+  max-width: 629px;
+  margin-bottom: 24px;
+  }
+  .about-text{
+  max-width: 573px;
+  font-size: 18px;
+}
+@media screen and (min-width: 768px) and (min-resolution: 192dpi){
+  .about-section{ 
+   background-image: linear-gradient( 
+    rgba(0, 0, 0, 0.4)),
+    url("/img/about/about-t@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 1440px){
+  .about-section{
+   background-image: linear-gradient( 
+    rgba(0, 0, 0, 0.4)),
+    url("/img/about/about-d@1x.jpg");
+  max-width: 1440px;
+  padding: 112px 336px 94px;
+  }
+  .about-subtitle{
+    font-size: 56px;
+  }
+}
+
+@media screen and (min-width: 1440px) and (min-resolution: 192dpi){
+  .about-section{
+   background-image: linear-gradient( 
+    rgba(0, 0, 0, 0.4)),
+    url("/img/about/about-d@2x.jpg");
+}
