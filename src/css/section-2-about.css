@@ -3,7 +3,6 @@
   background-color:#fff;
   color: #fff;
   background-image: linear-gradient( 
-    rgba(0, 0, 0, 0.2),
     rgba(0, 0, 0, 0.4)),
     url("/img/about/about-m@1x.jpg");
   background-repeat: no-repeat;
@@ -88,6 +87,7 @@
   .about-text{
   max-width: 573px;
   font-size: 18px;
+  }
 }
 @media screen and (min-width: 768px) and (min-resolution: 192dpi){
   .about-section{ 
@@ -103,7 +103,7 @@
     rgba(0, 0, 0, 0.4)),
     url("/img/about/about-d@1x.jpg");
   max-width: 1440px;
-  padding: 112px 336px 94px;
+  padding: 112px 94px;
   }
   .about-subtitle{
     font-size: 56px;
@@ -115,4 +115,5 @@
    background-image: linear-gradient( 
     rgba(0, 0, 0, 0.4)),
     url("/img/about/about-d@2x.jpg");
-}
+  }
+}  
