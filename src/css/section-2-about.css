@@ -9,19 +9,15 @@
   background-position: center;
   background-size: cover;
   margin: 0 auto;
-  max-width: 320px;
   padding: 64px 16px;
 }
-
 .about-container{
   background-color: #fff, rgba(0, 0, 0, 0.2);
   max-width: 288px;
+  height: auto;
   margin: 0 auto;
 }
-
-.about-title{
-  max-width: 95px;  
-  margin: auto;
+.about-title{ 
   margin-bottom: 12px;
 
   font-family: "Fira Sans", sans-serif;
@@ -31,11 +27,7 @@
   text-align: center;
   color: #fff;  
 }
-
 .about-subtitle{
-  max-width: 288px; 
-  height: auto;
-  margin: 0 auto;
   margin-bottom: 20px;
 
   font-family: "Comfortaa", sans-serif;
@@ -46,10 +38,7 @@
   text-align: center;
   color: #fff;  
 }
-
 .about-text{
-  max-width: 288px;
-  font-family: "Fira Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
@@ -70,23 +59,26 @@
   background-image: linear-gradient( 
     rgba(0, 0, 0, 0.4)),
     url("/img/about/about-t@1x.jpg");
-  max-width: 768px;
   padding: 80px 32px;
   }
   .about-container{
-    width: 100%;
-    height: 100%;
+    background-color: transparent;
+    max-width: 768px;
   }
   .about-title{
   margin-bottom: 16px;
   }
   .about-subtitle{
   max-width: 629px;
+  margin: 0 auto;
   margin-bottom: 24px;
+  padding: 0 69px;
   }
   .about-text{
   max-width: 573px;
   font-size: 18px;
+  margin: 0 auto;
+  padding: 0 9px; 
   }
 }
 @media screen and (min-width: 768px) and (min-resolution: 192dpi){
@@ -102,8 +94,7 @@
    background-image: linear-gradient( 
     rgba(0, 0, 0, 0.4)),
     url("/img/about/about-d@1x.jpg");
-  max-width: 1440px;
-  padding: 112px 94px;
+  padding: 112px 336px 94px;
   }
   .about-subtitle{
     font-size: 56px;
