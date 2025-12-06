@@ -2,11 +2,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #EBF8ED;
     padding: 32px 16px;
     gap: 24px;
-    font-family: Fira Sans;
-    color: #030A06;
 }
 
 .support-form-div {
@@ -14,11 +11,6 @@
 }
 
 .support-header {
-    font-family: "Comfortaa", sans-serif;   
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.2;
-    letter-spacing: 0.01em;
     margin-bottom: 24px;
 }
 
