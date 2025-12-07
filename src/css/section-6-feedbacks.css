@@ -1,0 +1,144 @@
+.feedbacks-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 32px;
+    padding: 32px 16px;
+    background: #ebf8ed;
+}
+
+.feedbacks-h {
+    font-family: "Comfortaa", sans-serif;
+
+    max-width: 288px;
+    font-weight: 700;
+    font-size: 36px;
+
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #030a06;
+}
+
+.feedbacks-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    gap: 40px;
+    width: 288px;
+    height: 736px;
+}
+
+.feedbacks-card {
+    text-align: left;
+    gap: 12px;
+}
+
+.feedbacks-stars {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 12px;
+}
+
+.feedbacks-svg {
+    fill: #3ac04c;
+}
+
+.feedback {
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+    color: #030a06;
+    margin-bottom: 12px;
+}
+
+.feedbacks-author {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: bold;
+    font-weight: 600;
+    top: 12px;
+    font-size: 16px;
+
+    line-height: 1.6;
+    color: #030a06;
+}
+
+@media screen and (min-width: 768px) {
+    .feedbacks-section {
+        padding: 64px 32px;
+        background: #ebf8ed;
+    }
+
+    .feedbacks-h {
+        max-width: 560px;
+    }
+
+   .feedbacks-container {
+        gap: 32px 24px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: row;
+        width: 704px;
+        height: 368px;
+   }
+
+   .feedbacks-card {
+        width: calc((100% - 24px) / 2);
+        text-align: left;
+        height: 182px;
+        min-width: 280px;
+        gap: 24px;
+   }
+
+   .feedbacks-stars {
+        margin-bottom: 24px;
+    }
+
+   .feedbacks-author {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 340px;
+        height: 26px;
+   }
+
+   .feedback {
+    margin-bottom: 24px;
+   }
+}
+
+@media screen and (min-width: 1440px) {
+    .feedbacks-section {
+        padding: 64px;
+        Gap: 80px;
+        }
+
+    .feedbacks-h {
+        font-size: 48px;
+    }
+    
+    .feedbacks-container {
+        gap: 24px;
+        height: 182px;
+        flex-wrap: nowrap;
+    }
+    
+    .feedbacks-card {
+        width: calc((100% - 72px) / 4);       
+        text-align: left;
+        gap: 24px;
+    }
+    
+    .feedbacks-author {
+        bottom: 64px;
+        width: 310px;
+        }
+}
