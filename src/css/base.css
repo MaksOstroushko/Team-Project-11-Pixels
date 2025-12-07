@@ -1,6 +1,5 @@
-
 h2 {
-  font-family: "Comfortaa" , sans-serif;
+  font-family: "Comfortaa" sans-serif;
   font-weight: 700;
   font-size: 48px;
   line-height: 1.2;
@@ -8,8 +7,9 @@ h2 {
 }
 
 body {
-  font-family: "Fira Sans" , sans-serif;
-  color: #030A06;
+  font-family: "Fira Sans" sans-serif;
+  color: #030a06;
+  background-color: #EBF8ED;
 }
 
 .container {
