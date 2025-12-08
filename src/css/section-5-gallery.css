@@ -70,6 +70,10 @@
 }
 
 @media screen and (min-width: 768px) {
+
+  .gallery-title {
+  }
+
   .gallery-text {
     margin-top: 24px;
   }
